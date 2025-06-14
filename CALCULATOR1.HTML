@@ -1,0 +1,120 @@
+<script src="jquery-3.7.1.slim.min.js"></script>
+<script src="CALCULATOR1.JS"></script>
+
+
+<HTML>
+    <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'poppins', sans-serif;
+    }
+
+    .body {
+    width: 100%;
+    width:  100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: red; */
+    background-color: linear-gradient(45deg, #000a0a);
+}
+
+.container {
+    border: 1px solid #717377;
+    padding: 20%;
+    border-radius: 16px;
+    background: rgb(74, 76, 74);
+    box-shadow: 0px 3px 15px rgb(16, 7, 7);
+
+}
+
+input {
+    width: 320;
+    border: none;
+    padding: 20px;
+    margin: 10px;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgba(84, 84, 84,0);
+    box-sizing: 40px;
+    text-align: right;
+    cursor: pointer;
+    color: #ffffff;
+
+}
+
+input ::placeholder {
+    color: #ffffff;
+
+}
+button {
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    background: transparent;
+    color: #ffffff;
+    font-size: 20px;
+    box-shadow: -8px 8px 15px rgba(255, 255, 255, 0);
+    cursor: pointer;
+    
+}
+
+.equalBtn {
+    background-color: #cc7128;
+
+}
+
+.calculator {
+    background-color: #494933;
+    width: 40%;
+    margin-left: 30%;
+}
+
+    </style>
+    <body>
+        
+   
+    <div class="container">
+        <div class="calculator" >
+
+            <input type="text" id="box" placeholder="0"> <br><br>
+            <div>
+                <button class="button Operator" value="AC">AC</button>
+                <button class="button Operator" value="DEL">DEL</button>
+                <button class="button Operator" value="%">%</button>
+                <button class="button Operator" value="/">/</button>
+
+            </div>
+
+            <div>
+                <button class="button">7</button>
+                <button class="button">8</button>
+                <button class="button">9</button>
+                <button class="button Operator">*</button>
+            </div>
+
+            <div>
+                <button class="button">4</button>
+                <button class="button">5</button>
+                <button class="button">6</button>
+                <button class="button Operator">-</button>
+            </div>
+            <div>
+                <button class="button">1</button>
+                <button class="button">2</button>
+                <button class="button">3</button>
+                <button class="button Operator">+</button>
+            </div>
+            <div>
+                <button class="button">00</button>
+                <button class="button">0</button>
+                <button class="button">.</button>
+                <button class="button equalBtn">=</button>
+            </div>
+        </div>
+    </div>
+     </body>
+</HTML>
